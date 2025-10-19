@@ -3,10 +3,10 @@
 🌎 INFORME DEL ANÁLISIS DE TEMPERATURA – ECUADOR / GLOBAL
 ===============================================================
 
-👨‍💻 Autor: Santiago Jumbo
-📅 Fecha: 2025-10-18
-📦 Proyecto: Análisis de temperatura 2m (ERA5 / NetCDF)
-📁 Archivo principal: analisis_ecuador.py
+Autor: Santiago Jumbo
+Fecha: 2025-10-18
+Proyecto: Análisis de temperatura 2m (ERA5 / NetCDF)
+Archivo principal: analisis_ecuador.py
 
 ---------------------------------------------------------------
 1️⃣ OBJETIVO
