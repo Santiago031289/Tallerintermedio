@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Temperatura en Ecuador</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; color: #222; line-height: 1.6; background: #fafafa; }
+        h1, h2, h3 { color: #003366; }
+        h1 { text-align: center; font-size: 2em; }
+        .section { margin-bottom: 35px; }
+        .highlight { background: #eef6fb; padding: 15px; border-left: 5px solid #0077b6; border-radius: 5px; }
+        img { display: block; margin: 20px auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 80%; }
+        code, pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; display: block; }
+        footer { margin-top: 50px; text-align: center; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+
+<h1>📊 Análisis de Temperatura en Ecuador usando Python y Datos NetCDF</h1>
+
+<div class="section">
+<h2>1. Introducción</h2>
+<p>Este informe presenta un análisis de datos climáticos en formato NetCDF utilizando Python. El propósito es explorar la variación de la temperatura sobre el territorio ecuatoriano mediante herramientas científicas para el procesamiento y visualización de información geoespacial.</p>
+<p>El estudio busca mostrar cómo los datos satelitales pueden procesarse de forma automatizada y visualmente atractiva para obtener indicadores ambientales relevantes.</p>
+</div>
+
+<div class="section">
+<h2>2. Metodología</h2>
+<p>Se utilizaron datos climáticos descargados en formato <strong>NetCDF (.nc)</strong>, procesados con las librerías <strong>xarray, numpy, matplotlib, cartopy</strong> y <strong>cmocean</strong>. Estos paquetes permiten abrir, manipular y representar información multidimensional de manera eficiente.</p>
+
+<div class="highlight">
+<b>Principales pasos del análisis:</b>
+<ul>
+  <li>Carga de archivos NetCDF con variables climáticas.</li>
+  <li>Conversión de temperaturas de Kelvin a Celsius.</li>
+  <li>Filtrado espacial para la región de Ecuador (latitud -6° a 3°, longitud -92° a -74°).</li>
+  <li>Cálculo de estadísticas: promedio, máximo y mínimo.</li>
+  <li>Generación de un mapa térmico promedio y una serie temporal de variación.</li>
+</ul>
+</div>
+
+<p>El código fue diseñado para adaptarse automáticamente a diferentes estructuras de archivos NetCDF, detectando nombres de variables y dimensiones sin requerir modificaciones manuales.</p>
+</div>
+
+<div class="section">
+<h2>3. Resultados</h2>
+<p>Los gráficos generados permiten visualizar el comportamiento térmico en Ecuador a partir de los datos procesados. A continuación se muestran ejemplos del resultado visual del análisis:</p>
+
+<img src="mapa_promedio.png" alt="Mapa de temperatura promedio">
+<img src="serie_temporal.png" alt="Serie temporal de temperatura">
+
+<p>El mapa muestra la distribución espacial de las temperaturas promedio, mientras que la serie temporal permite observar la variabilidad del promedio regional a lo largo del tiempo.</p>
+</div>
+
+<div class="section">
+<h2>4. Funcionalidad del Código</h2>
+<p>El código desarrollado cumple varias funciones clave:</p>
+<ul>
+  <li><b>Automatización:</b> Carga y procesamiento de archivos sin intervención manual.</li>
+  <li><b>Flexibilidad:</b> Se adapta a distintos nombres de variables y dimensiones temporales o espaciales.</li>
+  <li><b>Visualización:</b> Genera automáticamente gráficos listos para informes o publicaciones.</li>
+  <li><b>Reproducibilidad:</b> Los resultados pueden ser replicados en cualquier entorno Jupyter con los mismos archivos NetCDF.</li>
+</ul>
+
+<p>En conjunto, este flujo de trabajo permite transformar datos satelitales crudos en productos interpretables para la gestión ambiental y el monitoreo climático.</p>
+</div>
+
+<div class="section">
+<h2>5. Conclusiones</h2>
+<p>El análisis demostró que Python ofrece una plataforma poderosa para la manipulación de datos climáticos. La combinación de bibliotecas como <em>xarray</em> y <em>cartopy</em> facilita el estudio de patrones espaciales y temporales de la temperatura en Ecuador.</p>
+<p>El código puede ampliarse para incluir nuevas variables (precipitación, humedad, NDVI, etc.) o integrarse con visores interactivos para la comunicación de resultados científicos.</p>
+</div>
+
+<footer>
+<p>© 2025 - Proyecto de Análisis Climático | Elaborado por Santiago Jumbo</p>
+</footer>
+
+</body>
+</html>
